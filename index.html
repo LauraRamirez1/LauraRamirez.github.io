@@ -5,69 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  
 </head>
 <body>
-  <header>
-		<div class="menu_bar">
-			<a href="#" class="bt-menu"><span class="icon-paragraph-justify"></span>Menu</a>
-		</div>
 
-		<nav>
-			<ul>
-				<li id="navfirst"> <a href="#startShow"><span class="icon-home3"></span>Inicio</a></li>
-				<li id="navAboutMe"><a href="#aboutMe"><span class="icon-camera"></span>Acerca de mi</a></li>
-				<li id="navSkills"><a href="#skills"><span class="icon-pen"></span>Skills</a></li>
-				<li id="navProjects"><a href="#projects"><span class="icon-hammer"></span>Proyectos</a></li>
-				<li id="navConctacMe"><a href="#contact"><span class="icon-envelop"></span>Contacto</a></li>
-			</ul>
-    </nav>
-<main  id = "sections" >
-  <section id="startShow">
+  <div id="navbar">
+    <ul>
+      <div class="parent2">
+          <li id="aboutMe" class="test1"><a href="#"></a> <i class="fa  fa-user fa-2x"></i></li>
+          <li id="skills"class="test2"><a href="#"></a><i class="fa fa-graduation-cap fa-2x"></i></li> 
+          <li id="projects" class="test3"><a href="#"></a><i class="fa fa-code fa-2x"></i></li> 
+          <li id="contact" class="test4"><a href="#"></a><i class="fa fa-envelope-o fa-2x"></i></li> 
+          <li id="your-element-selector2" class="mask2"><a href="#your-element-selector2"></a><i class="fa fa-home fa-3x"></i></li> 
+     </div>
+    </ul>
+</div>
 
+  <section id="your-element-selector2">
+      <section id="your-element-selector" style="padding: 20%">
+        <div class="centerImageHeader">
+         <h1>LAURA RAMIREZ</h1>
+         <h1>FRONT DEVELOPER</h1>
+       </div>
+     </section>
+   </section>
+ 
+  <section id="aboutMe">  
+      <h2>ACERCA DE MI</h2>
+      <div id=bigBox> 
+     </div> 
   </section>
-  <section id="aboutMe">
-  
-  </section>
+
   <section id="skills">
-
+      <h2>SKILLS</h2>
+      <div id=bigBox>
+        <img class="d-block w-100" src="./img/css3.svg" alt="First slide">
+        <img class="d-block w-100" src="./img/github.svg" alt="Second slide">
+        <img class="d-block w-100" src="./img/html5.svg" alt="Third slide">
+        <img class="d-block w-100" src="./img/javascript.svg" alt="Third slide">
+      </div>          
   </section>
+
   <section id="projects">
-    <h3>"ESTOS SON ALGUNOS DE MIS PROYECTOS"</h3>
-    <div id=bigBox>
-      <div class="box">
-        <div id=titleProject> <h4>BURGER QUEEN</h4></div>
-
-        <figure><img class="picture" src="img/burguerQueen.png" alt=""></figure>
-
-      <div id="description">
-       <p>Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto</p>
-      </div>      
-      </div>
-      <div class="box">
-          <div id=titleProject> <h4>BURGER QUEEN</h4></div>
-  
-          <figure><img class="picture" src="img/burguerQueen.png" alt=""></figure>
-          
-        <div id="description">
-         <p>Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto</p>
-        </div>
-    </div>
-    <div class="box">
-        <div id=titleProject> <h4>BURGER QUEEN</h4></div>
-
-        <figure><img class="picture" src="img/burguerQueen.png" alt=""></figure>
-        
-      <div id="description">
-       <p>Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto</p>
-      </div>
-  </div>
+      <h2>ESTOS SON ALGUNOS DE MIS PROYECTOS</h2>
+      <div id=bigBox>
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/burguerQueen.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto.</p>
+              </div>
+            </div>  
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/burguerQueen.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto.</p>
+                </div>
+              </div>  
+              <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="img/burguerQueen.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto.</p>
+                  </div>
+                </div>  
+         </div>     
   </section>
+
   <section id="contact">
+    <h2>Si de desea contactarme o dejarme un mensaje hagalo a continuacion:</h2>
+    <div id=bigBox>
+   </div> 
+
   </section>
-</main>
-	</header>
+
+  <script src="three.r92.min.js"></script>
+  <script src="vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+    el: "#your-element-selector",
+    color: 0x1d5175,
+    backgroundColor: 0x0
+  })
+  </script>
+  
+  <script src="./main.js"></script>
+
 </body>
 </html>
