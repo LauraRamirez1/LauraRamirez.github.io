@@ -82,7 +82,8 @@ body {
   height:90px;
   background:black;
   position:absolute;
-  z-index:21;
+  z-index:21; 
+  border-radius:50%;
   color:white;
   text-align:center;
   line-height:120px;
