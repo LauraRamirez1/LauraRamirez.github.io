@@ -10,17 +10,18 @@
   <link rel="stylesheet" href="./style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
 
-  <div id="navbar">
-    <ul>
-      <div class="parent2">
-          <li id="aboutMe" class="test1"><a href="#aboutMe"></a> <i class="fa  fa-user fa-2x"></i></li>
-          <li id="skills"class="test2"><a href="#skills"></a><i class="fa fa-graduation-cap fa-2x"></i></li> 
-          <li id="projects" class="test3"><a href="#projects"></a><i class="fa fa-code fa-2x"></i></li> 
-          <li id="contact" class="test4"><a href="#contact"></a><i class="fa fa-envelope-o fa-2x"></i></li> 
-          <li id="your-element-selector2" class="mask2"><a href="#your-element-selector2"></a><i class="fa fa-home fa-3x"></i></li> 
+<div id="navbar">
+  <ul>
+    <div class="parent2">
+      <li class="test1"><a href="#aboutMe"><i class="fa  fa-user fa-2x"></i></a></li>
+      <li class="test2"><a href="#skills"><i class="fa fa-graduation-cap fa-2x"></i></a></li> 
+      <li class="test3"><a href="#projects"><i class="fa fa-code fa-2x"></i></a></li> 
+      <li class="test4"><a href="#contact"><i class="fa fa-envelope-o fa-2x"></i></a></li> 
+      <li class="mask2"><a href="#your-element-selector2"><i class="fa fa-home fa-3x"></i></a></li> 
      </div>
     </ul>
 </div>
@@ -29,30 +30,65 @@
       <section id="your-element-selector" style="padding: 20%">
         <div class="centerImageHeader">
          <h1>LAURA RAMIREZ</h1>
-         <h1>FRONT-END DEVELOPER</h1>
+         <h2>FRONT-END DEVELOPER</h2>
        </div>
      </section>
    </section>
- 
+
   <section id="aboutMe">  
-      <h2>ACERCA DE MI</h2>
-      <div id=bigBox> 
-     </div> 
+    <h2 class="subtitulo">SOBRE MÍ </h2>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12 mg">
+            <img src="./img/fotomia.jpeg" class="foto">
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mg">
+            <p class="parrafo">Front-End Developer e ingeniera de Producción Agroindustrial, amante de la vida, la música, la naturaleza y la tecnología. Me gusta aprender constantemente, asumir retos y hacer cosas interesantes que generen algún tipo de impacto. Aprendo rápido, soy capaz de adquirir nuevas habilidades.  Deseo hacer de la programación mi nueva forma de generar impacto.
+            </p>
+          </div>
+        </div>
+    </div>
   </section>
 
   <section id="skills">
-      <h2>SKILLS</h2>
-      <div id=bigBox>
-        <img class="d-block w-100" src="./img/css3.svg" alt="First slide">
-        <img class="d-block w-100" src="./img/github.svg" alt="Second slide">
-        <img class="d-block w-100" src="./img/html5.svg" alt="Third slide">
-        <img class="d-block w-100" src="./img/javascript.svg" alt="Third slide">
-      </div>          
+    <h2>HABILIDADES</h2>
+    <div  style="padding: 10%" >
+      <div class="containerIcons">
+        <div class="row" >
+          <div class="col centerIcons">
+            <i class="devicon-javascript-plain"></i>
+            <p>Javascript</p>
+          </div>
+          <div class="col centerIcons">
+            <i id="icon"class="devicon-react-original"></i>
+            <p>React</p>
+          </div>
+          <div class="col centerIcons">
+            <i class="devicon-github-plain"></i>
+            <p>Github</p>
+          </div>
+        </div>
+        <div class="row"  style="padding: 5%" >
+          <div class="col centerIcons">
+            <i class="devicon-html5-plain"></i>
+            <p>Html 5</p>
+          </div>
+          <div class="col centerIcons">
+            <i class="devicon-css3-plain"></i>
+            <p>Css</p>
+          </div>
+          <div class="col centerIcons">
+            <i class="devicon-bootstrap-plain"></i>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </div>                  
   </section>
 
   <section id="projects">
       <h2>ESTOS SON ALGUNOS DE MIS PROYECTOS</h2>
-      <div id=bigBox>
+        <div class="row"  style="background-color: red">
           <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="img/burguerQueen.png" alt="Card image cap">
               <div class="card-body">
@@ -71,14 +107,12 @@
                     <p class="card-text">Burger Queen es un  proyecto proyecto proyecto proyecto proyecto proyecto proyecto proyecto.</p>
                   </div>
                 </div>  
+              </div>
          </div>     
   </section>
 
   <section id="contact">
     <h2>Si de desea contactarme o dejarme un mensaje hagalo a continuacion:</h2>
-    <div id=bigBox>
-   </div> 
-
   </section>
 
   <script src="three.r92.min.js"></script>
@@ -86,7 +120,7 @@
   <script>
     VANTA.NET({
     el: "#your-element-selector",
-    color: 0x1d5175,
+    color: 0xe1f31,
     backgroundColor: 0x0
   })
   </script>
